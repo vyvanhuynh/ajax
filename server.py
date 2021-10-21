@@ -46,7 +46,7 @@ def fortune():
 def weather():
     """Return a weather-info dictionary for this zipcode."""
 
-    zipcode = request.args.get('zipcode')
+    zipcode = request.args.get('zipcode') #get from web request 
     weather_info = WEATHER.get(zipcode, DEFAULT_WEATHER)
     return jsonify(weather_info)
 

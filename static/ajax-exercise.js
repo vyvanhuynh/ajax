@@ -44,12 +44,12 @@ function orderMelons(evt) {
 
   const formValues = {
     qty: $('#qty-field').val(),
-    melonType: $('#melon-type-field').val()
+    melon_type: $('#melon-type-field').val()
   };
-
   $.post('/order-melons.json',formValues, resultHandler);
-  // TODO: show the result message after your form
-  // TODO: if the result code is ERROR, make it show up in red (see our CSS!)
 }
+//   // TODO: show the result message after your form
+//   // TODO: if the result code is ERROR, make it show up in red (see our CSS!)
+// }
 
-$('#order-form').on('submit', orderMelons);
+$('#order-form').on('submit', orderMelons)
